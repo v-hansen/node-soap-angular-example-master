@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html data-ng-app='demoApp'>
+  <head>
+    <meta charset='Windows-1252'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title></title>
+    <meta name='viewport' content='width=device-width'>
+    <link rel='icon' href='img/favicon.ico' type='image/x-icon'>
+    <link rel='stylesheet' href='/css/screen.css'>
+  </head>
+  <body data-ng-controller='AppCtrl'>
+    <div class='cover' data-ng-hide='appInitialized', data-ng-animate='{ hide: "fadeOut" }'></div>
+    <h1>{{title}}</h1>
+    <div data-ng-show='loggedIn'>
+      <!-- available for authenticated users only -->
+      <p>{{hidden}}</p>
+    </div>
+
+    <div class='container'>
+      <div data-ng-view='ng-view'></div>
+      <div data-ng-bind='error', data-ng-show='error'></div>
+    </div>
+
+    <script src='/js/vendor/angular.js'></script>
+    <script src='/js/vendor/angular-cookies.js'></script>
+    <script src='/js/vendor/underscore-min.js'></script>
+
+    <script src='/js/app.js'></script>
+    <script src='/js/services.js'></script>
+    <script src='/js/controllers.js'></script>
+    <script src='/js/filters.js'></script>
+    <script src='/js/directives.js'></script>
+  </body>
+</html>

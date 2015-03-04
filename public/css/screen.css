@@ -1,0 +1,89 @@
+/* Hide the page until it is fully loaded */
+body {
+  margin: 0;
+}
+
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  -ms-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out;
+}
+
+.fadeOut-start {
+  opacity: 0;
+}
+
+.blink {
+  -webkit-animation: blink 1s infinite;
+  -moz-animation: blink 1s infinite;
+  -ms-animation: blink 1s infinite;
+  -o-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+
+@keyframes "blink" {
+ from {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+ }
+ to {
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+ }
+}
+
+@-moz-keyframes blink {
+ from {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ to {
+   -moz-transform: scale(1.0);
+   transform: scale(1.0);
+ }
+}
+
+@-webkit-keyframes "blink" {
+ from {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ to {
+   -webkit-transform: scale(1.0);
+   transform: scale(1.0);
+ }
+}
+
+@-ms-keyframes "blink" {
+ from {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ to {
+   -ms-transform: scale(1.0);
+   transform: scale(1.0);
+ }
+}
+
+@-o-keyframes "blink" {
+ from {
+   filter: alpha(opacity=0);
+   opacity: 0;
+ }
+ to {
+   -o-transform: scale(1.0);
+   transform: scale(1.0);
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "node-soap-angular-example",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "soap": "*",
+    "underscore": "*"
+  },
+  "subdomain": "node-soap-angular-example",
+  "scripts": {
+    "start": "server.js"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

@@ -1,0 +1,13 @@
+<h1>Home view</h1>
+<p>{{greeting}}</p>
+
+<a href='#' data-ng-click='get()'>Fetch data from SOAP WSDL</a>
+<a href='#' ng-click='logout()'>Log out</a>
+
+<p class='blink' data-ng-show='showlog'>Loading...</p>
+
+<ul data-ng-repeat='result in results'>
+	<li>{{result}}</li>
+</ul>
+
+<p>For this example I am using <a href="http://www.webservicex.net/BibleWebservice.asmx">BibleWebservice</a> endpoint.</p>
